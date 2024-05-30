@@ -40,6 +40,8 @@ These items are all configurable as options on each command.
 9. Subtitle language
 10. Decryption
 11. Additional commands: No folder, No source, Skip download, Slow
+    
+![Screenshot 2024-05-29 115132](https://github.com/billybanana80/DevineGUI/assets/149659663/7c54074c-8125-4cd9-97e3-c23c89e7900d)
 
 Queue
 1. you may choose to add each item to a queue, rather than click Go for each individual search/download. The command will be added to a queue.bat file in your devine folder location. Click Process to run all the items in the queue at once
@@ -55,12 +57,16 @@ Options
 8. Upgrade Devine version: will check and upgrade the devine python package where necessary
 9. Test CDM: use to test the validity of your CDM
 
+![Screenshot 2024-05-30 082001](https://github.com/billybanana80/DevineGUI/assets/149659663/5e81316d-2aab-41c3-ab67-60efc70d61c2)
+
 Proxy
 1. Hola List Countries: displays the list of countries available in the hola-proxy function
 2. Hola Version: displays the current Hola version
 
 Favorites
 1. Favorites button will display list of your series that you follow and can save as a Favorite. Highlight a row and click Copy to send the series URL to the main window in Option 4
+
+![Screenshot 2024-05-30 081945](https://github.com/billybanana80/DevineGUI/assets/149659663/0afbe27b-5b46-4b14-a133-c88c7dcffe58)
 
 Sites
 1. Choose a service from the Sites list to open their website
