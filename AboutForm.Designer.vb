@@ -34,7 +34,7 @@ Partial Class AboutForm
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(317, 121)
+        Button1.Location = New Point(320, 125)
         Button1.Name = "Button1"
         Button1.Size = New Size(75, 30)
         Button1.TabIndex = 0
@@ -48,9 +48,9 @@ Partial Class AboutForm
         Label1.ForeColor = SystemColors.ControlText
         Label1.Location = New Point(12, 9)
         Label1.Name = "Label1"
-        Label1.Size = New Size(226, 15)
+        Label1.Size = New Size(224, 15)
         Label1.TabIndex = 1
-        Label1.Text = "Devine GUI created by billybanana v 1.0.0"
+        Label1.Text = "Devine GUI created by billybanana v 1.0.1"
         ' 
         ' Label2
         ' 

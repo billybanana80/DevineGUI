@@ -8,7 +8,7 @@ Devine v3.3.3 and all it's requirements as per https://github.com/devine-dl/devi
 
 Windows .NET 6.0 Desktop Runtime
 
-Installation: the DevineGUI is a portable executable and does not require to be installed. You can place the Devine GUI folder in any location on your machine, there is no specific folder location requirement. When running DevineGUI for the first tme please set your Devine folder location ie: that is the Devine folder from https://github.com/stabbedbybrick/Devine (this is a Mandatory step) You may also choose to set your Downloads folder location in the Options (this is an optional step, however it will update the folderpath in your devine.yaml file if you use this option)
+Installation: the DevineGUI is a portable executable and does not require to be installed. You can place the Devine GUI folder in any location on your machine, there is no specific folder location requirement. When running DevineGUI for the first tme please set your Devine folder location ie: that is the Devine folder from https://github.com/devine-dl/devine (this is a Mandatory step) You may also choose to set your Downloads folder location in the Options (this is an optional step, however it will update the folderpath in your devine.yaml file if you use this option)
 
 Note: there are no services included with this release. Services must be configured separately in your Devine/services folder before using this application.
 

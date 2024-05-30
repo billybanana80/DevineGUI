@@ -7,7 +7,7 @@ Imports System.Text.RegularExpressions
 Imports System.IO
 
 Public Class Form1
-    ' Devine GUI created by billybanana v 1.0.0
+    ' Devine GUI created by billybanana v 1.0.1
     ' This application does not interact directly with any streaming service.
 
     ' The python Function(s) invoked are created by the devine team.
@@ -2185,5 +2185,15 @@ Public Class Form1
         startexternal.StartInfo.UseShellExecute = True
 
         startexternal.Start()
+    End Sub
+
+    Private Sub SetOptionsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SetOptionsToolStripMenuItem.Click
+        'Open the Options form
+        Form2.Show()
+    End Sub
+
+    Private Sub ShowFavoritesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShowFavoritesToolStripMenuItem.Click
+        ' Open Favorites form
+        Form3.Show()
     End Sub
 End Class

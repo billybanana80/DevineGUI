@@ -91,6 +91,8 @@ Partial Class Form1
         EnvInfoToolStripMenuItem = New ToolStripMenuItem()
         ListConfigToolStripMenuItem = New ToolStripMenuItem()
         OpenConfigFileToolStripMenuItem = New ToolStripMenuItem()
+        SetOptionsToolStripMenuItem = New ToolStripMenuItem()
+        ShowFavoritesToolStripMenuItem = New ToolStripMenuItem()
         UpgradeDevineVersionToolStripMenuItem = New ToolStripMenuItem()
         ToolStripSeparator1 = New ToolStripSeparator()
         FreevineExternalCommandPromptToolStripMenuItem = New ToolStripMenuItem()
@@ -213,6 +215,7 @@ Partial Class Form1
         btnSSA = New RadioButton()
         btnSRT = New RadioButton()
         Label21 = New Label()
+        ToolStripSeparator3 = New ToolStripSeparator()
         GroupBox1.SuspendLayout()
         GroupBox10.SuspendLayout()
         GroupBox8.SuspendLayout()
@@ -934,7 +937,7 @@ Partial Class Form1
         ' 
         ' OptionsToolStripMenuItem
         ' 
-        OptionsToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {EmptyTempFolderToolStripMenuItem, EnvInfoToolStripMenuItem, ListConfigToolStripMenuItem, OpenConfigFileToolStripMenuItem, UpgradeDevineVersionToolStripMenuItem, ToolStripSeparator1, FreevineExternalCommandPromptToolStripMenuItem, TestCDMToolStripMenuItem})
+        OptionsToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {SetOptionsToolStripMenuItem, ShowFavoritesToolStripMenuItem, ToolStripSeparator3, EmptyTempFolderToolStripMenuItem, EnvInfoToolStripMenuItem, ListConfigToolStripMenuItem, OpenConfigFileToolStripMenuItem, UpgradeDevineVersionToolStripMenuItem, ToolStripSeparator1, FreevineExternalCommandPromptToolStripMenuItem, TestCDMToolStripMenuItem})
         OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
         OptionsToolStripMenuItem.Size = New Size(61, 20)
         OptionsToolStripMenuItem.Text = "Options"
@@ -962,6 +965,18 @@ Partial Class Form1
         OpenConfigFileToolStripMenuItem.Name = "OpenConfigFileToolStripMenuItem"
         OpenConfigFileToolStripMenuItem.Size = New Size(199, 22)
         OpenConfigFileToolStripMenuItem.Text = "Open Config File"
+        ' 
+        ' SetOptionsToolStripMenuItem
+        ' 
+        SetOptionsToolStripMenuItem.Name = "SetOptionsToolStripMenuItem"
+        SetOptionsToolStripMenuItem.Size = New Size(199, 22)
+        SetOptionsToolStripMenuItem.Text = "Set Options"
+        ' 
+        ' ShowFavoritesToolStripMenuItem
+        ' 
+        ShowFavoritesToolStripMenuItem.Name = "ShowFavoritesToolStripMenuItem"
+        ShowFavoritesToolStripMenuItem.Size = New Size(199, 22)
+        ShowFavoritesToolStripMenuItem.Text = "Show Favorites"
         ' 
         ' UpgradeDevineVersionToolStripMenuItem
         ' 
@@ -1178,30 +1193,30 @@ Partial Class Form1
         ' AboutToolStripMenuItem
         ' 
         AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        AboutToolStripMenuItem.Size = New Size(180, 22)
+        AboutToolStripMenuItem.Size = New Size(173, 22)
         AboutToolStripMenuItem.Text = "About"
         ' 
         ' ToolStripSeparator2
         ' 
         ToolStripSeparator2.Name = "ToolStripSeparator2"
-        ToolStripSeparator2.Size = New Size(177, 6)
+        ToolStripSeparator2.Size = New Size(170, 6)
         ' 
         ' DevineGitHubToolStripMenuItem
         ' 
         DevineGitHubToolStripMenuItem.Name = "DevineGitHubToolStripMenuItem"
-        DevineGitHubToolStripMenuItem.Size = New Size(180, 22)
+        DevineGitHubToolStripMenuItem.Size = New Size(173, 22)
         DevineGitHubToolStripMenuItem.Text = "Devine GitHub"
         ' 
         ' ConfigDocumentationToolStripMenuItem
         ' 
         ConfigDocumentationToolStripMenuItem.Name = "ConfigDocumentationToolStripMenuItem"
-        ConfigDocumentationToolStripMenuItem.Size = New Size(180, 22)
+        ConfigDocumentationToolStripMenuItem.Size = New Size(173, 22)
         ConfigDocumentationToolStripMenuItem.Text = "Devine Config Info"
         ' 
         ' VideoForumThreadToolStripMenuItem
         ' 
         VideoForumThreadToolStripMenuItem.Name = "VideoForumThreadToolStripMenuItem"
-        VideoForumThreadToolStripMenuItem.Size = New Size(180, 22)
+        VideoForumThreadToolStripMenuItem.Size = New Size(173, 22)
         VideoForumThreadToolStripMenuItem.Text = "DevineGUI GitHub"
         ' 
         ' StatusStrip1
@@ -2129,10 +2144,16 @@ Partial Class Form1
         Label21.TabIndex = 8
         Label21.Text = "Select the subtitle format (default is set in devine.yaml if not selected)"
         ' 
+        ' ToolStripSeparator3
+        ' 
+        ToolStripSeparator3.Name = "ToolStripSeparator3"
+        ToolStripSeparator3.Size = New Size(196, 6)
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        AutoScroll = True
         ClientSize = New Size(1155, 904)
         Controls.Add(GroupBox19)
         Controls.Add(GroupBox11)
@@ -2413,4 +2434,7 @@ Partial Class Form1
     Friend WithEvents btnSSA As RadioButton
     Friend WithEvents btnSRT As RadioButton
     Friend WithEvents Label21 As Label
+    Friend WithEvents SetOptionsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ShowFavoritesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
 End Class
