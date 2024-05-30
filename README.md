@@ -53,7 +53,7 @@ Options
 6. Env Info: displays the devine config info
 7. Open Config File: opens the devine.yaml file and is in an editable state
 8. Upgrade Devine version: will check and upgrade the devine python package where necessary
-9. 9. Test CDM: use to test the validity of your CDM
+9. Test CDM: use to test the validity of your CDM
 
 Proxy
 1. Hola List Countries: displays the list of countries available in the hola-proxy function
