@@ -195,6 +195,7 @@ Public Class Form1
         Dim decryptArguments As String = ""
         Dim videobitrateArguments As String = ""
         Dim subsformatArguments As String = ""
+        Dim movieArguments As String = ""
 
         Select Case True
             Case BtnInfo.Checked
@@ -586,6 +587,13 @@ Public Class Form1
                 tagArguments = "--tag " + tbTags.Text
             End If
 
+            ' Check if tbCustom.Text is DSNP
+            If tbCustom.Text = "DSNP" Then
+                movieArguments = "--movie"
+            Else
+                movieArguments = ""
+            End If
+
             ' Check if Slow Option is checked
             If BtnSlow.Checked = False Then
                 secondsArguments = ""
@@ -634,7 +642,7 @@ Public Class Form1
             End If
 
             ' Construct the complete command with quoted TextBox value
-            Dim completeCommand As String = $"devine {dlArguments} {nofolderArguments} {proxyArguments} {tagArguments} {threadsArguments} {skipdlArguments} {resolutionArguments} {videocodecArguments} {audiocodecArguments} {videobitrateArguments} {decryptArguments} {searchArguments} {wantedArguments} {episodeArguments} {secondsArguments} {subtitleArguments} {subsArguments} {subsformatArguments} {listArguments} {serviceArguments} {quotedTextBoxValue}"
+            Dim completeCommand As String = $"devine {dlArguments} {nofolderArguments} {proxyArguments} {tagArguments} {threadsArguments} {skipdlArguments} {resolutionArguments} {videocodecArguments} {audiocodecArguments} {videobitrateArguments} {decryptArguments} {searchArguments} {wantedArguments} {episodeArguments} {secondsArguments} {subtitleArguments} {subsArguments} {subsformatArguments} {listArguments} {serviceArguments} {movieArguments} {quotedTextBoxValue}"
 
             ' Display the complete command in TextBox Complete Command
             TBcompletecommand.Text = completeCommand
@@ -1496,6 +1504,7 @@ Public Class Form1
         Dim decryptArguments As String = ""
         Dim videobitrateArguments As String = ""
         Dim subsformatArguments As String = ""
+        Dim movieArguments As String = ""
 
         Select Case True
             Case BtnInfo.Checked
@@ -1885,6 +1894,13 @@ Public Class Form1
                 tagArguments = "--tag " + tbTags.Text
             End If
 
+            ' Check if tbCustom.Text is DSNP
+            If tbCustom.Text = "DSNP" Then
+                movieArguments = "--movie"
+            Else
+                movieArguments = ""
+            End If
+
             ' Check if Slow Option is checked
             If BtnSlow.Checked = False Then
                 secondsArguments = ""
@@ -1940,7 +1956,7 @@ Public Class Form1
             End If
 
             ' Construct the complete command with quoted TextBox value
-            Dim completeCommand As String = $"devine {dlArguments} {nofolderArguments} {nosourceArguments} {tagArguments} {proxyArguments} {threadsArguments} {skipdlArguments} {resolutionArguments} {videocodecArguments} {audiocodecArguments} {videobitrateArguments} {decryptArguments} {searchArguments} {wantedArguments} {episodeArguments} {secondsArguments} {subtitleArguments} {subsArguments} {subsformatArguments} {listArguments} {serviceArguments} {quotedTextBoxValue}"
+            Dim completeCommand As String = $"devine {dlArguments} {nofolderArguments} {nosourceArguments} {tagArguments} {proxyArguments} {threadsArguments} {skipdlArguments} {resolutionArguments} {videocodecArguments} {audiocodecArguments} {videobitrateArguments} {decryptArguments} {searchArguments} {wantedArguments} {episodeArguments} {secondsArguments} {subtitleArguments} {subsArguments} {subsformatArguments} {listArguments} {serviceArguments} {movieArguments} {quotedTextBoxValue}"
 
             ' Update the queue content (add new entry or modify as needed)
             Dim newQueueEntry As String = completeCommand
