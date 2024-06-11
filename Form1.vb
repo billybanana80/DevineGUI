@@ -619,6 +619,7 @@ Public Class Form1
             ' Check if Episode Number/Range is empty
             If tbEpisodes.Text = "" Then
                 episodeArguments = ""
+                wantedArguments = ""
             Else
                 ' Specify the episode numner/range
                 episodeArguments = tbEpisodes.Text
@@ -1924,6 +1925,7 @@ Public Class Form1
             ' Check if Episode Number/Range is empty
             If tbEpisodes.Text = "" Then
                 episodeArguments = ""
+                wantedArguments = ""
             Else
                 ' Specify the episode numner/range
                 episodeArguments = tbEpisodes.Text
