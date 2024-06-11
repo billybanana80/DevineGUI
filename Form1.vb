@@ -588,7 +588,7 @@ Public Class Form1
             End If
 
             ' Check if tbCustom.Text is DSNP
-            If tbCustom.Text = "DSNP" Then
+            If tbCustom.Text = "DSNP" And tbEpisodes.Text = "" Then
                 movieArguments = "--movie"
             Else
                 movieArguments = ""
@@ -1895,7 +1895,7 @@ Public Class Form1
             End If
 
             ' Check if tbCustom.Text is DSNP
-            If tbCustom.Text = "DSNP" Then
+            If tbCustom.Text = "DSNP" And tbEpisodes.Text = "" Then
                 movieArguments = "--movie"
             Else
                 movieArguments = ""
