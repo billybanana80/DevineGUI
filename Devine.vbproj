@@ -9,6 +9,8 @@
     <ApplicationIcon>drm_info.ico</ApplicationIcon>
     <FileVersion>1.1.1</FileVersion>
     <AssemblyVersion>1.1.1</AssemblyVersion>
+    <Version>1.0.3</Version>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <ItemGroup>

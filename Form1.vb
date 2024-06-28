@@ -7,7 +7,7 @@ Imports System.Text.RegularExpressions
 Imports System.IO
 
 Public Class Form1
-    ' Devine GUI created by billybanana v 1.0.1
+    ' Devine GUI created by billybanana v 1.0.3
     ' This application does not interact directly with any streaming service.
 
     ' The python Function(s) invoked are created by the devine team.
@@ -590,8 +590,12 @@ Public Class Form1
             ' Check if tbCustom.Text is DSNP
             If tbCustom.Text = "DSNP" And tbEpisodes.Text = "" Then
                 movieArguments = "--movie"
+                episodeArguments = ""
+                wantedArguments = ""
             Else
                 movieArguments = ""
+                ' Specify the episode number/range
+                episodeArguments = tbEpisodes.Text
             End If
 
             ' Check if Slow Option is checked
@@ -622,15 +626,6 @@ Public Class Form1
             Else
                 ' Specify the number of threads entered
                 threadsArguments = "--workers " + tbThreads.Text
-            End If
-
-            ' Check if Episode Number/Range is empty
-            If tbEpisodes.Text = "" Then
-                episodeArguments = ""
-                wantedArguments = ""
-            Else
-                ' Specify the episode numner/range
-                episodeArguments = tbEpisodes.Text
             End If
 
             ' Check if Video Bitrate Option is empty
@@ -1897,8 +1892,12 @@ Public Class Form1
             ' Check if tbCustom.Text is DSNP
             If tbCustom.Text = "DSNP" And tbEpisodes.Text = "" Then
                 movieArguments = "--movie"
+                episodeArguments = ""
+                wantedArguments = ""
             Else
                 movieArguments = ""
+                ' Specify the episode number/range
+                episodeArguments = tbEpisodes.Text
             End If
 
             ' Check if Slow Option is checked
@@ -1936,15 +1935,6 @@ Public Class Form1
             Else
                 ' Specify the number of threads entered
                 threadsArguments = "--workers " + tbThreads.Text
-            End If
-
-            ' Check if Episode Number/Range is empty
-            If tbEpisodes.Text = "" Then
-                episodeArguments = ""
-                wantedArguments = ""
-            Else
-                ' Specify the episode numner/range
-                episodeArguments = tbEpisodes.Text
             End If
 
             ' Check if Video Bitrate Option is empty

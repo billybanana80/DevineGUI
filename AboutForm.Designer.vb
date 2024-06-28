@@ -50,7 +50,7 @@ Partial Class AboutForm
         Label1.Name = "Label1"
         Label1.Size = New Size(226, 15)
         Label1.TabIndex = 1
-        Label1.Text = "Devine GUI created by billybanana v 1.0.2"
+        Label1.Text = "Devine GUI created by billybanana v 1.0.3"
         ' 
         ' Label2
         ' 
